@@ -11,6 +11,30 @@ struct ContentView: View {
   @State
   private var apiKey: String = ""
   
+  func getStoredKey() -> String {
+    let kcw = KeychainWrapper()
+    if let password = try? kcw.getApiKeyFor(
+      account: "TPMHelper",
+      service: "apiKey") {
+      return password
+    }
+    return ""
+  }
+  
+  func setApiKey(_ password: String) {
+    let kcw = KeychainWrapper()
+    do {
+      try kcw.storeApiKeyFor(
+        account: "TPMHelper",
+        service: "apiKey",
+        password: password)
+    } catch let error as KeychainWrapperError {
+      print("Exception setting password: \(error.message ?? "no message")")
+    } catch {
+      print("An error occurred setting the password.")
+    }
+  }
+  
   var body: some View {
     VStack {
       Image(systemName: "globe")
