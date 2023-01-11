@@ -15,9 +15,9 @@
 		0614DFC2296E20C2007B7D58 /* TPMHelperUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0614DFC1296E20C2007B7D58 /* TPMHelperUITests.swift */; };
 		0614DFC4296E20C2007B7D58 /* TPMHelperUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0614DFC3296E20C2007B7D58 /* TPMHelperUITestsLaunchTests.swift */; };
 		0614DFD2296E2160007B7D58 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 0614DFD1296E2160007B7D58 /* Alamofire */; };
-		0614DFDA296E2296007B7D58 /* KeychainWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0614DFD9296E2296007B7D58 /* KeychainWrapper.swift */; };
+		0614DFDA296E2296007B7D58 /* KeychainServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0614DFD9296E2296007B7D58 /* KeychainServices.swift */; };
 		0614DFDC296E22D0007B7D58 /* NetworkRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0614DFDB296E22D0007B7D58 /* NetworkRouter.swift */; };
-		0614DFDE296E235D007B7D58 /* README in Resources */ = {isa = PBXBuildFile; fileRef = 0614DFDD296E235D007B7D58 /* README */; };
+		06470113296E2A140048261B /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 06470112296E2A140048261B /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,9 +49,9 @@
 		0614DFBD296E20C2007B7D58 /* TPMHelperUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TPMHelperUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0614DFC1296E20C2007B7D58 /* TPMHelperUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TPMHelperUITests.swift; sourceTree = "<group>"; };
 		0614DFC3296E20C2007B7D58 /* TPMHelperUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TPMHelperUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		0614DFD9296E2296007B7D58 /* KeychainWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainWrapper.swift; sourceTree = "<group>"; };
+		0614DFD9296E2296007B7D58 /* KeychainServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainServices.swift; sourceTree = "<group>"; };
 		0614DFDB296E22D0007B7D58 /* NetworkRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkRouter.swift; sourceTree = "<group>"; };
-		0614DFDD296E235D007B7D58 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
+		06470112296E2A140048261B /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,7 +83,7 @@
 		0614DF99296E20C1007B7D58 = {
 			isa = PBXGroup;
 			children = (
-				0614DFDD296E235D007B7D58 /* README */,
+				06470112296E2A140048261B /* README.md */,
 				0614DFA4296E20C1007B7D58 /* TPMHelper */,
 				0614DFB6296E20C2007B7D58 /* TPMHelperTests */,
 				0614DFC0296E20C2007B7D58 /* TPMHelperUITests */,
@@ -159,7 +159,7 @@
 		0614DFD8296E2256007B7D58 /* Helper */ = {
 			isa = PBXGroup;
 			children = (
-				0614DFD9296E2296007B7D58 /* KeychainWrapper.swift */,
+				0614DFD9296E2296007B7D58 /* KeychainServices.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -274,7 +274,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0614DFDE296E235D007B7D58 /* README in Resources */,
+				06470113296E2A140048261B /* README.md in Resources */,
 				0614DFAE296E20C2007B7D58 /* Preview Assets.xcassets in Resources */,
 				0614DFAA296E20C2007B7D58 /* Assets.xcassets in Resources */,
 			);
@@ -301,7 +301,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0614DFDA296E2296007B7D58 /* KeychainWrapper.swift in Sources */,
+				0614DFDA296E2296007B7D58 /* KeychainServices.swift in Sources */,
 				0614DFDC296E22D0007B7D58 /* NetworkRouter.swift in Sources */,
 				0614DFA8296E20C1007B7D58 /* ContentView.swift in Sources */,
 				0614DFA6296E20C1007B7D58 /* TPMHelperApp.swift in Sources */,
